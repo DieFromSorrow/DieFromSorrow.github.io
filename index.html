@@ -167,70 +167,9 @@
 
     
         <div class="content">
-            <h1 id="关于-Git-的远程仓库"><a href="#关于-Git-的远程仓库" class="headerlink" title="关于 Git 的远程仓库"></a>关于 Git 的远程仓库</h1><p><em>此文用于千帆竞发项目环境测试</em></p>
-<h2 id="基础指令"><a href="#基础指令" class="headerlink" title="基础指令"></a>基础指令</h2><ul>
-<li><p>git remote add ( 远程主机名，统一用 origin，后文以 origin 代替 ) ( url ) &#x3D;&gt; 与远程仓库建立连接</p>
-<blockquote>
-<p><a target="_blank" rel="noopener" href="https://www.runoob.com/git/git-remote.html">git remote 指令 菜鸟教程</a></p>
-</blockquote>
-</li>
-<li><p>git fetch ( origin ) &#x3D;&gt; 拉取远程仓库的更新，执行后需执行 merge 指令</p>
-<blockquote>
-<p><a target="_blank" rel="noopener" href="https://www.runoob.com/git/git-fetch.html">git fetch 指令 菜鸟教程</a></p>
-</blockquote>
-</li>
-<li><p>git merge ( origin )&#x2F;( branch ) &#x3D;&gt; 将远程仓库对应分支合并到本地目前分支</p>
-<blockquote>
-<p><a target="_blank" rel="noopener" href="https://www.runoob.com/git/git-branch.html">git 分支管理 菜鸟教程</a></p>
-</blockquote>
-</li>
-<li><p>git pull ( origin ) ( main ):( brantest ) &#x3D;&gt; 将远程主机 origin 的 master 分支拉取过来，与本地的 brantest 分支合并，如果远程分支是与当前分支合并，则冒号后面的部分可以省略</p>
-<blockquote>
-<p><a target="_blank" rel="noopener" href="https://www.runoob.com/git/git-pull.html">git pull 指令 菜鸟教程</a></p>
-</blockquote>
-</li>
-<li><p>git push ( origin ) ( main ):( main ) &#x3D;&gt; git push 命令用于从将本地的分支版本上传到远程并合并，如果本地分支名与远程分支名相同，则可以省略冒号</p>
-<blockquote>
-<p><a target="_blank" rel="noopener" href="https://www.runoob.com/git/git-push.html">git fetch 指令 菜鸟教程</a></p>
-</blockquote>
-</li>
-<li><p>git clone ( url 统一用 ssh ) &#x3D;&gt; 将远程仓库内容克隆到本地并将与远程仓库建立连接</p>
-<blockquote>
-<p><a target="_blank" rel="noopener" href="https://www.runoob.com/git/git-remote-repo.html">git 远程仓库 菜鸟教程</a></p>
-</blockquote>
-</li>
-</ul>
-<hr>
-<h2 id="初步测试流程"><a href="#初步测试流程" class="headerlink" title="初步测试流程"></a>初步测试流程</h2><ul>
-<li>选择一个合适的目录将项目克隆到本地<ol>
-<li>克隆 &#x3D;&gt; 执行 <code>git clone</code></li>
-</ol>
-</li>
-<li>创建仓库<ol>
-<li>创建 &#x3D;&gt; 执行 <code>git init</code></li>
-</ol>
-</li>
-<li>查看自己对应的分支（在命令提示符最右边），如果是 master 应改为 main（因为 GitHub 目前默认分支为 main），创建、切换、删除分支详见【git 分支管理】上面有链接<ol>
-<li>新建分支 &#x3D;&gt; 执行 <code>git branch ( 新分支名 )</code> </li>
-<li>切换分支 &#x3D;&gt; 执行 <code>git checkout ( 分支名 )</code></li>
-</ol>
-</li>
-<li>在本地目录中添加一个文件，文件名包含自己的信息（不要有中文、特殊字符和空格）尝试暂存、提交到本地仓库，再更新到远程仓库<ol>
-<li>暂存 &#x3D;&gt; 执行 <code>git add ( filename )</code></li>
-<li>提交 &#x3D;&gt; 执行 <code>git commit -m "( 提交信息 )"</code></li>
-<li>更新到远程 &#x3D;&gt; 执行 <code>git push ( origin ) ( main )</code></li>
-</ol>
-</li>
-</ul>
-<hr>
-<h2 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h2><ul>
-<li>刷新 GitHub 发现项目内增加了自己的文件即成功</li>
-<li>目前先完成这些操作，后面再测试分支与合并</li>
-<li>有问题发群里一起讨论</li>
-<li>文章可能有疏忽，发现请指正，一切以链接资料为准</li>
-</ul>
-
+            <h1 id="关于-Git-的远程仓库"><a href="#关于-Git-的远程仓库" class="headerlink" title="关于 Git 的远程仓库"></a>关于 Git 的远程仓库</h1><p><em><strong>— — 此文用于千帆竞发项目环境测试</strong></em></p>
         </div>
+        <a href="/2023/01/19/Git-Remote/" class="read-more">Read More</a>
     
 
 </div>
@@ -279,7 +218,7 @@
                 <ul class="list-inline footer-social-icons">
                     
                     <li class="list-inline-item">
-                        <a target="_blank" rel="noopener" href="https://github.com/klugjo/hexo-theme-alpha-dust">
+                        <a target="_blank" rel="noopener" href="https://github.com/DieFromSorrow">
                             <span class="footer-icon-container">
                                 <i class="fa fa-github"></i>
                             </span>
@@ -287,85 +226,21 @@
                     </li>
                     
                     
-                    <li class="list-inline-item">
-                        <a target="_blank" rel="noopener" href="https://twitter.com/?lang=en">
-                            <span class="footer-icon-container">
-                                <i class="fa fa-twitter"></i>
-                            </span>
-                        </a>
-                    </li>
+                    
+                    
+                    
+                    
+                    
                     
                     
                     <li class="list-inline-item">
-                        <a target="_blank" rel="noopener" href="https://www.facebook.com/">
-                            <span class="footer-icon-container">
-                                <i class="fa fa-facebook"></i>
-                            </span>
-                        </a>
-                    </li>
-                    
-                    
-                    <li class="list-inline-item">
-                        <a target="_blank" rel="noopener" href="https://www.instagram.com/">
-                            <span class="footer-icon-container">
-                                <i class="fa fa-instagram"></i>
-                            </span>
-                        </a>
-                    </li>
-                    
-                    
-                    <li class="list-inline-item">
-                        <a target="_blank" rel="noopener" href="https://dribbble.com/">
-                            <span class="footer-icon-container">
-                                <i class="fa fa-dribbble"></i>
-                            </span>
-                        </a>
-                    </li>
-                    
-                    
-                    <li class="list-inline-item">
-                        <a target="_blank" rel="noopener" href="https://telegram.org/">
-                            <span class="footer-icon-container">
-                                <i class="fa fa-telegram"></i>
-                            </span>
-                        </a>
-                    </li>
-                    
-                    
-                    <li class="list-inline-item">
-                        <a target="_blank" rel="noopener" href="https://www.behance.net/">
-                            <span class="footer-icon-container">
-                                <i class="fa fa-behance"></i>
-                            </span>
-                        </a>
-                    </li>
-                    
-                    
-                    <li class="list-inline-item">
-                        <a target="_blank" rel="noopener" href="https://500px.com/">
-                            <span class="footer-icon-container">
-                                <i class="fa fa-500px"></i>
-                            </span>
-                        </a>
-                    </li>
-                    
-                    
-                    <li class="list-inline-item">
-                        <a href="mailto:test@example.com">
+                        <a href="mailto:2937128647@qq.com">
                             <span class="footer-icon-container">
                                 <i class="fa fa-envelope-o"></i>
                             </span>
                         </a>
                     </li>
                     
-                    
-                    <li class="list-inline-item">
-                        <a href="\#">
-                            <span class="footer-icon-container">
-                                <i class="fa fa-rss"></i>
-                            </span>
-                        </a>
-                    </li>
                     
                 </ul>
             </div>
