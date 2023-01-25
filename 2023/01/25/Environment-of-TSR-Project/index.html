@@ -10,11 +10,7 @@
 
     <!--Description-->
     
-        <meta name="description" content="第一级标题第二级标题
-正文第一个章节
-第一个主题
-
-第二个主题">
+        <meta name="description" content="Environment-of-TSR-Project— — 千帆竞发项目虚拟环境以及工程组织结构">
     
 
     <!--Author-->
@@ -24,7 +20,7 @@
 
     <!--Open Graph Title-->
     
-        <meta property="og:title" content="demo"/>
+        <meta property="og:title" content="Environment-of-TSR-Project"/>
     
 
     <!--Open Graph Description-->
@@ -49,7 +45,7 @@
 
     <!-- Title -->
     
-    <title>demo - DieFromSorrow</title>
+    <title>Environment-of-TSR-Project - DieFromSorrow</title>
 
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
@@ -155,8 +151,8 @@
 
     <div class="post-header">
         <h1 class="title">
-            <a href="/2023/01/25/demo/">
-                demo
+            <a href="/2023/01/25/Environment-of-TSR-Project/">
+                Environment-of-TSR-Project
             </a>
         </h1>
         <div class="post-info">
@@ -174,11 +170,37 @@
         
 
         <!-- Post Content -->
-        <h1 id="第一级标题"><a href="#第一级标题" class="headerlink" title="第一级标题"></a>第一级标题</h1><h2 id="第二级标题"><a href="#第二级标题" class="headerlink" title="第二级标题"></a>第二级标题</h2><hr>
-<h2 id="正文第一个章节"><a href="#正文第一个章节" class="headerlink" title="正文第一个章节"></a>正文第一个章节</h2><ul>
-<li><p>第一个主题</p>
+        <h1 id="Environment-of-TSR-Project"><a href="#Environment-of-TSR-Project" class="headerlink" title="Environment-of-TSR-Project"></a>Environment-of-TSR-Project</h1><p><em><strong>— — 千帆竞发项目虚拟环境以及工程组织结构</strong></em></p>
+<span id="more"></span>
+
+<hr>
+<h2 id="虚拟环境搭建——pipenv"><a href="#虚拟环境搭建——pipenv" class="headerlink" title="虚拟环境搭建——pipenv"></a>虚拟环境搭建——pipenv</h2><p><em>pipenv 用于更加方便地管理项目依赖，可以为项目创建独立的虚拟环境，管理依赖</em></p>
+<ul>
+<li><p>安装 pipenv：pip install pipenv</p>
 </li>
-<li><p>第二个主题</p>
+<li><p>创建虚拟环境</p>
+<ul>
+<li><p>pipenv install &#x3D;&gt; 为项目创建一个文件夹，用来包含隔离的 python 解释器、依赖包。默认情况下，虚拟环境文件夹在 C:\Users\Admin\.virtualenvs\目录下创建</p>
+</li>
+<li><p>pipenv shell &#x3D;&gt; 显式地激活虚拟环境，启动一个虚拟环境的子 shell，你会发现命令提示符前面添加了虚拟环境名称（退出使用 exit 命令）</p>
+</li>
+</ul>
+</li>
+<li><p>管理依赖</p>
+<ul>
+<li><p>如果创建虚拟环境时项目根目录没有 Pipfile 文件，使用 pipenv install 命令创建虚拟环境时，会自动在根目录下创建 Pipfile 和 Pipfile.lock，前者用来记录依赖列表，后者记录详细信息。当我们使用 pipenv install … 安装依赖时，Pipfile 和 Pipfile.lock 会自动更新。</p>
+</li>
+<li><p>如果根目录内存在 Pipfile，使用 pipenv install 创建虚拟环境时会自动读取 Pipfile 文件并将依赖安装到创建的虚拟环境中。这样，当项目转移或部署上线时都很容易管理依赖。</p>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="工程结构"><a href="#工程结构" class="headerlink" title="工程结构"></a>工程结构</h2><p>源码文件其中在 .\thousand_sails_race\ 中，其中：</p>
+<ul>
+<li><p>templates\ 和 static\ 文件夹包含前端内容，html模板放在templates里面，css，js和其他图片等静态文件放在 static 中。</p>
+</li>
+<li><p>.py文件 主要是后端内容，视图函数放views.py中，表单类放forms.py中，数据库的类放models.py中，config内容放settings.py中。</p>
 </li>
 </ul>
 
@@ -218,7 +240,7 @@
         <ul>
             
             <li>
-                <a class="footer-post" href="/2023/01/25/demo/">demo</a>
+                <a class="footer-post" href="/2023/01/25/Environment-of-TSR-Project/">Environment-of-TSR-Projec</a>
             </li>
             
             <li>
